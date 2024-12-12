@@ -42,3 +42,35 @@ Desafio de Conclusão de Curso da Pós Graduação em Go pela Full Cycle
 - Testes automatizados demonstrando a eficácia e a robustez do rate limiter.
 - Utilize docker/docker-compose para que possamos realizar os testes de sua aplicação.
 - O servidor web deve responder na porta 8080.
+
+## Executando o Projeto
+
+- Primeiramente é necessário subir os containers do projeto. Para isso, execute o comando abaixo:
+
+```bash
+make up
+```
+
+- Para executar os testes unitários é necessário executar o comando abaixo:
+
+```bash
+make test
+```
+
+- Caso seja necessário limpar os arquivos gerados pelo teste
+
+```bash
+make clean
+```
+
+- Para executar o cenário de testes baseado no IP:
+
+```bash
+make run-ip
+```
+
+- Para executar o cenário de testes baseado no Token:
+
+```bash
+make run-token
+```
